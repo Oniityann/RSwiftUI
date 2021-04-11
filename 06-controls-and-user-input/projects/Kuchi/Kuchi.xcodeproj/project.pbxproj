@@ -19,6 +19,7 @@
 		EF26131F2620B32400FD3AF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF26131E2620B32400FD3AF2 /* Preview Assets.xcassets */; };
 		EF2613272620B44C00FD3AF2 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2613262620B44C00FD3AF2 /* RegisterView.swift */; };
 		EF26132B2620B5A000FD3AF2 /* WelcomeMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26132A2620B5A000FD3AF2 /* WelcomeMessageView.swift */; };
+		EF2E786726232B2A0039B364 /* BorderViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E786626232B2A0039B364 /* BorderViewModifier.swift */; };
 		EFE490F2262048D700036380 /* KuchiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE490F1262048D700036380 /* KuchiApp.swift */; };
 		EFE490F4262048D700036380 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE490F3262048D700036380 /* ContentView.swift */; };
 		EFE490F6262048D800036380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE490F5262048D800036380 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		EF26131E2620B32400FD3AF2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EF2613262620B44C00FD3AF2 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		EF26132A2620B5A000FD3AF2 /* WelcomeMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMessageView.swift; sourceTree = "<group>"; };
+		EF2E786626232B2A0039B364 /* BorderViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderViewModifier.swift; sourceTree = "<group>"; };
 		EFE490EE262048D700036380 /* Kuchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kuchi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE490F1262048D700036380 /* KuchiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuchiApp.swift; sourceTree = "<group>"; };
 		EFE490F3262048D700036380 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				EF2613152620B15800FD3AF2 /* WelcomeBackgroundImage.swift */,
 				EF2613182620B20800FD3AF2 /* LogoImage.swift */,
 				EF26132A2620B5A000FD3AF2 /* WelcomeMessageView.swift */,
+				EF2E786626232B2A0039B364 /* BorderViewModifier.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2613272620B44C00FD3AF2 /* RegisterView.swift in Sources */,
+				EF2E786726232B2A0039B364 /* BorderViewModifier.swift in Sources */,
 				EF2613112620AA1D00FD3AF2 /* UserManager.swift in Sources */,
 				EF26130126205EBD00FD3AF2 /* HomeView.swift in Sources */,
 				EF2613192620B20800FD3AF2 /* LogoImage.swift in Sources */,
