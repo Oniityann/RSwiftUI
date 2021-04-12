@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF1C4CDC2623B58F004EE683 /* KeyboardFollower.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1C4CDB2623B58F004EE683 /* KeyboardFollower.swift */; };
 		EF2612FE26205E8500FD3AF2 /* jp.json in Resources */ = {isa = PBXBuildFile; fileRef = EF2612FD26205E8500FD3AF2 /* jp.json */; };
 		EF26130126205EBD00FD3AF2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26130026205EBD00FD3AF2 /* HomeView.swift */; };
 		EF26130426205ED600FD3AF2 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26130326205ED600FD3AF2 /* WelcomeView.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF1C4CDB2623B58F004EE683 /* KeyboardFollower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyboardFollower.swift; path = ../../starter/Kuchi/iOS/Utils/KeyboardFollower.swift; sourceTree = "<group>"; };
 		EF2612FD26205E8500FD3AF2 /* jp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = jp.json; path = ../../../starter/Kuchi/Shared/Resources/jp.json; sourceTree = "<group>"; };
 		EF26130026205EBD00FD3AF2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EF26130326205ED600FD3AF2 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				EF26130026205EBD00FD3AF2 /* HomeView.swift */,
 				EFE490F1262048D700036380 /* KuchiApp.swift */,
 				EFE490F3262048D700036380 /* ContentView.swift */,
+				EF1C4CDB2623B58F004EE683 /* KeyboardFollower.swift */,
 				EF26130D2620AA1D00FD3AF2 /* Profile */,
 				EF2612FC26205E6500FD3AF2 /* Resource */,
 				EF2612FA26205E4500FD3AF2 /* Welcome */,
@@ -214,6 +217,7 @@
 				EF2E786726232B2A0039B364 /* BorderViewModifier.swift in Sources */,
 				EF2613112620AA1D00FD3AF2 /* UserManager.swift in Sources */,
 				EF26130126205EBD00FD3AF2 /* HomeView.swift in Sources */,
+				EF1C4CDC2623B58F004EE683 /* KeyboardFollower.swift in Sources */,
 				EF2613192620B20800FD3AF2 /* LogoImage.swift in Sources */,
 				EF2613132620AA1D00FD3AF2 /* Settings.swift in Sources */,
 				EFE490F4262048D700036380 /* ContentView.swift in Sources */,
@@ -352,7 +356,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Kuchi/Kuchi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Kuchi/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Kuchi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -375,7 +379,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Kuchi/Kuchi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Kuchi/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Kuchi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

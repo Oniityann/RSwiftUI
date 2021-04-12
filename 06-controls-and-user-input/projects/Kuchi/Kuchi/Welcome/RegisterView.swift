@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct KuchiTextStyle: TextFieldStyle {
   public func _body(
     configuration: TextField<Self._Label>) -> some View {
@@ -28,6 +27,12 @@ struct KuchiTextStyle: TextFieldStyle {
 
 struct RegisterView: View {
   @State var name = ""
+  @ObservedObject var keyboardHandler: KeyboardFollower
+  
+  init(keyboardHandler: KeyboardFollower) {
+    self.keyboardHandler = keyboardHandler
+  }
+  
   var body: some View {
     VStack {
       Spacer()
@@ -35,17 +40,28 @@ struct RegisterView: View {
       WelcomeMessageView()
       
       TextField("Type your name...", text: $name)
-        .textFieldStyle(KuchiTextStyle())
+        .bordered()
+      Button(action: registerUser) {
+        Text("OK")
+      }
       
       Spacer()
     }
+    .padding(.bottom, keyboardHandler.keyboardHeight)
+    .edgesIgnoringSafeArea(keyboardHandler.isVisible ? .bottom : [])
     .padding()
     .background(WelcomeBackgroundImage())
   }
 }
 
+extension RegisterView {
+  func registerUser() {
+    print("Button Triggered")
+  }
+}
+
 struct RegisterView_Previews: PreviewProvider {
   static var previews: some View {
-    RegisterView()
+    RegisterView(keyboardHandler: KeyboardFollower())
   }
 }

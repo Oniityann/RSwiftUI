@@ -23,3 +23,12 @@ struct BorderViewModifier: ViewModifier {
       .cornerRadius(8)
   }
 }
+
+extension View {
+  func bordered() -> some View {
+    ModifiedContent(
+      content: self,
+      modifier: BorderViewModifier()
+    )
+  }
+}
