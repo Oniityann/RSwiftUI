@@ -26,7 +26,7 @@ struct KuchiTextStyle: TextFieldStyle {
 }
 
 struct RegisterView: View {
-  @State var name = ""
+  @EnvironmentObject var userManager: UserManager
   @ObservedObject var keyboardHandler: KeyboardFollower
   
   init(keyboardHandler: KeyboardFollower) {
@@ -39,11 +39,44 @@ struct RegisterView: View {
       
       WelcomeMessageView()
       
-      TextField("Type your name...", text: $name)
+      TextField("Type your name...", text: $userManager.profile.name)
         .bordered()
-      Button(action: registerUser) {
-        Text("OK")
+      
+      HStack {
+        Spacer()
+        
+        Text("\(userManager.profile.name.count)")
+          .font(.caption)
+          .foregroundColor(
+            userManager.isUserNameValid() ? .green : .red)
+          .padding(.trailing)
       }
+      .padding(.bottom)
+
+      HStack {
+        Spacer()
+        
+        Toggle(isOn: $userManager.settings.rememberUser) {
+          Text("Remember me")
+            .font(.subheadline)
+            .foregroundColor(.gray)
+        }
+        .fixedSize()
+      }
+      
+      Button(action: registerUser) {
+        HStack {
+          Image(systemName: "checkmark")
+            .resizable()
+            .frame(width: 16, height: 16, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+          
+          Text("OK")
+            .font(.body)
+            .bold()
+        }
+      }
+      .bordered()
+      .disabled(!userManager.isUserNameValid())
       
       Spacer()
     }
@@ -56,12 +89,15 @@ struct RegisterView: View {
 
 extension RegisterView {
   func registerUser() {
-    print("Button Triggered")
+    userManager.persistProfile()
   }
 }
 
 struct RegisterView_Previews: PreviewProvider {
+  static let user = UserManager(name: "Ray")
+  
   static var previews: some View {
     RegisterView(keyboardHandler: KeyboardFollower())
+      .environmentObject(user)
   }
 }

@@ -19,8 +19,7 @@ struct BorderViewModifier: ViewModifier {
           .foregroundColor(.blue)
       )
       .shadow(color: Color.gray.opacity(0.4),
-              radius: 3, x: 1, y: 2)
-      .cornerRadius(8)
+              radius: 3, x: 2, y: 2)
   }
 }
 
